@@ -9,7 +9,7 @@
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^6.3.0",
+    "@whiskeysockets/baileys": "^6.4.0",
     "axios": "^1.4.0",
     "browser-id3-writer": "^4.4.0",
     "file-type": "^16.5.3",
@@ -19,8 +19,7 @@
     "pino": "^8.14.1",
     "qrcode-terminal": "^0.12.0",
     "sequelize": "^6.23.0",
-    "sqlite3": "^5.1.6",
-    "x-asena": "^1.0.1"
+    "sqlite3": "^5.1.6"
   },
   "scripts": {
     "start": "node index.js"
