@@ -17,7 +17,7 @@ fs.readdirSync(__dirname + "/assets/database/").forEach((db) => {
 });
 
 const connect = async () => {
-  console.log("X-Asena");
+  console.log("Himshu Md");
   console.log("Syncing Database");
   config.DATABASE.sync();
   console.log("⬇  Installing Plugins...");
@@ -48,7 +48,7 @@ const connect = async () => {
       }
       if (connection === "open") {
         console.log("✅ Login Successful!");
-        let str = `\`\`\`X-asena connected \nversion : ${
+        let str = `\`\`\`Himshu Md connected \nversion : ${
           require(__dirname + "/package.json").version
         }\nTotal Plugins : ${plugins.commands.length}\nWorktype: ${
           config.WORK_TYPE
