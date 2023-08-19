@@ -27,16 +27,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/X-Electra/X-Asena.git"
+    "url": "git+https://github.com/nimesh-official/Himshu-Md.git"
   },
   "keywords": [
     "bot",
     "whatsapp"
   ],
-  "author": "Neeraj-x0",
+  "author": "Nimesh Official",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/X-Electra/X-Asena/issues"
+    "url": "https://github.com/nimesh-official/Himshu-Md/issues"
   },
-  "homepage": "https://github.com/X-Electra/X-Asena#readme"
+  "homepage": "https://github.com/nimesh-official/Himshu-Md#readme"
 }
