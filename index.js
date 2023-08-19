@@ -1,10 +1,4 @@
-const {
-  default: makeWASocket,
-  useMultiFileAuthState,
-  Browsers,
-  delay,
-  DisconnectReason,
-} = require("@whiskeysockets/baileys");
+const { default: makeWASocket, useMultiFileAuthState, Browsers, delay, DisconnectReason } = require("@whiskeysockets/baileys");
 const path = require("path");
 const { Image, Message, Sticker, Video } = require("./lib/Messages");
 let fs = require("fs");
@@ -34,10 +28,8 @@ const connect = async () => {
   });
   console.log("✅ Plugins Installed!");
 
-  const Xasena = async () => {
-    const { state, saveCreds } = await useMultiFileAuthState(
-      __dirname + "/session"
-    );
+  const Himshu = async () => {
+    const { state, saveCreds } = await useMultiFileAuthState(__dirname + "/auth_info_baileys/");
     let conn = makeWASocket({
       auth: state,
       printQRInTerminal: true,
@@ -73,7 +65,7 @@ const connect = async () => {
           DisconnectReason.loggedOut
         ) {
           await delay(300);
-          Xasena();
+          Himshu();
           console.log("reconnecting...");
         } else {
           console.log("connection closed\nDevice logged out.");
@@ -168,7 +160,7 @@ const connect = async () => {
     });
     return conn;
   };
-  Xasena();
+  Himshu();
 };
 
 connect();
